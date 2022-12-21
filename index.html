@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Responsive</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/base.css">
-</head>
-
-<body>
-  <h2 class="question--title">Q7 サイズ変更</h2>
-  <h2 class="question--title">Q2 色変更</h2>
-  <h2 class="question--title">Q3 margin値の変更</h2>
-  <h2 class="question--title">Q4 floatの解除</h2>
-  <h2 class="question--title">Q5 flexboxの入れ替え(逆順)</h2>
-  <h2 class="question--title">Q6 flexboxの入れ替え(指定)</h2>
-  <h2 class="question--title">Q7 要素の表示・非表示</h2>
-</body>
-
+  <body>
+    <div class="wrapper">
+      <h2 class="question--title">Q7 サイズ変更</h2>
+      <div class="marginBox box1"></div>
+      <h2 class="question--title">Q2 色変更</h2>
+      <div class="marginBox normalBox box2"></div>
+      <h2 class="question--title">Q3 margin値の変更</h2>
+      <div class="flex">
+        <div class="box3 normalBox"></div>
+        <div class="box4 normalBox"></div>
+      </div>
+      <h2 class="question--title">Q4 floatの解除</h2>
+      <div class="clearfix floatCenter">
+        <div class="box5"></div>
+        <div class="box6"></div>
+      </div>
+      <h2 class="question--title">Q5 flexboxの入れ替え(逆順)</h2>
+      <div class="flexAlign reverseFlex">
+        <div class="flexAlign box7 normalBox">
+          <p>A</p>
+        </div>
+        <div class="flexAlign box8 normalBox">
+          <p>B</p>
+        </div>
+        <div class="flexAlign box9 normalBox">
+          <p>C</p>
+        </div>
+      </div>
+      <h2 class="question--title">Q6 flexboxの入れ替え(指定)</h2>
+      <div class="flexAlign">
+        <div class="flexAlign box10 normalBox">
+          <p>A</p>
+        </div>
+        <div class="flexAlign box11 normalBox">
+          <p>B</p>
+        </div>
+        <div class="flexAlign box12 normalBox">
+          <p>C</p>
+        </div>
+      </div>
+      <h2 class="question--title">Q7 要素の表示・非表示</h2>
+      <div class="flex">
+        <div class="box13"></div>
+        <div class="box14"></div>
+        <div class="box15"></div>
+      </div>
+    </div>
+  </body>
 </html>
